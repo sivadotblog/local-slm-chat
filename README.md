@@ -9,3 +9,13 @@ The idea is ,
 3) use microsoft phi3.5 medium and fast api to create a conversational api.
 4) use streamlit to demo the interface.
 5) the streamlit app has multiple pages and based on wher the user is, the page meta will be sent to the fast api along with the chat query so that the rag model is able to get more accurate response
+
+## Implementation Details
+
+### Streamlit App
+
+The Streamlit app has been designed to include multiple pages, each with unique meta information. The app sends the page meta information to the FastAPI endpoint along with the chat query. This ensures that the RAG model can provide more accurate responses based on the context of the page.
+
+### FastAPI Integration
+
+The FastAPI endpoint has been updated to accept page meta information along with the chat query. The endpoint uses the microsoft phi3.5 medium model to generate responses based on the provided information.
